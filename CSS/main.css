@@ -1,0 +1,31 @@
+:root {
+    font-size: 16px;
+}
+
+*, ::after, ::before {
+    color: aliceblue;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80vw;
+    min-width: 1200px;
+    min-height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 2rem;
+}
+
+.hidden {
+    display: none !important; 
+}
+
+.recommendation {
+    min-height: 500px;
+}
+

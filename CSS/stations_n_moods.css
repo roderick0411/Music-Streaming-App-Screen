@@ -1,0 +1,156 @@
+/* --------------Stations----------------- */
+
+.stations-container .stations {
+    display: flex;
+    gap: 1rem;
+}
+
+.stations-container .stations figure {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.stations-container .stations figure img {
+    width: 100%;
+}
+
+.stations-container .stations figure figcaption {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+
+.stations-container .stations figure:hover img {
+    filter: brightness(30%) blur(2px);
+}
+
+.stations-container .stations figure:hover {
+    cursor: pointer;
+}
+
+.stations-container .stations figure:hover figcaption {
+    top: 50%;
+    opacity: 1;
+}
+
+/* -----------------Moods--------------------- */
+
+.moods-container .moods {
+    display: flex;
+    gap: 1rem;
+}
+
+.moods-container .moods .mood-div {
+    flex-basis: 30%;
+    position: relative;
+    flex-grow: 1;
+}
+
+.moods-container .moods .mood-div .mood {
+    width: 100%;
+    aspect-ratio: 3/2;
+    align-items: center;
+    color: aliceblue;
+    background-size: 100%;
+    background-position: center;
+    transition: all .2s ease-out;
+    filter: brightness(60%);
+}
+
+.moods-container .moods .mood-div .mood:hover {
+    background-size: 120%;
+    filter: brightness(50%);
+    cursor: pointer;
+}
+
+.moods-container .moods .mood-div .title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* ---------------------Charts----------------- */
+
+.charts {
+    width: 100%;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.charts .chart-div {
+    flex-basis: 20%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.charts .chart-div .thumbnail {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.charts .chart-div .thumbnail .play-btn{
+    width: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: visible;
+    opacity: 0;
+    transition: all .2s ease-out;
+}
+
+.charts .chart-div .thumbnail .play-btn img{
+    width: 100%;
+}
+
+.charts .chart-div .thumbnail:hover .play-btn{
+    opacity: 1;
+}
+
+.charts .chart-div .thumbnail:hover > img {
+    filter: brightness(40%) blur(2px);
+    cursor: pointer;
+}
+
+.charts .chart-div .thumbnail > img {
+    width: 100%;
+}
+
+.charts .chart-div .title {
+    margin-top: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.charts .chart-div .description {
+    margin-top: .6rem;
+    font-size: .9rem;
+    opacity: .8;
+    letter-spacing: .5px;
+}

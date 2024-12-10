@@ -1,0 +1,37 @@
+.top-vids-container {
+    position: relative;
+    width: 100%;
+}
+
+.slide-left {
+    transform: translateX(-25%);
+}
+
+.top-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    /* transform: translateX(-10%); */
+}
+
+.top-videos .vid{
+    overflow: hidden;
+    border-radius: .25rem;
+    /* flex-basis: 32%;
+    flex-shrink: 0; */
+    transition: all .2s linear;
+    /* flex-grow: 1; */
+    margin: 0 .37rem;
+}
+
+.top-videos:has(.vid:hover) > .vid:not(:hover){
+    transform: scale(.95);
+}
+
+.top-videos .vid img{
+    width: 100%;
+}
+
+.top-videos .vid:hover{
+    transform: scale(1.15);
+}

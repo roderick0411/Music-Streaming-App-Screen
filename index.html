@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./CSS/variables.css" />
+    <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/queue.css" />
+    <link rel="stylesheet" href="./CSS/top-vids.css" />
+    <link rel="stylesheet" href="./CSS/podcasts.css" />
+    <link rel="stylesheet" href="./CSS/artists.css" />
+    <link rel="stylesheet" href="./CSS/artist-section.css" />
+    <link rel="stylesheet" href="./CSS/stations_n_moods.css" />
+    <link rel="stylesheet" href="./CSS/player.css" />
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/07797e39f8.js"
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div class="logo-favorites">
+        <img src="./images/app-logo.svg" alt="" class="app-logo" />
+        <h3>Favorites</h3>
+      </div>
+      <div class="search-notification">
+        <div class="search-bar">
+          <img src="./images/search.svg" alt="" />
+          <input type="text" placeholder="Search" />
+          <img src="./images/microphone.svg" alt="" />
+        </div>
+        <div class="notification-bell">
+          <img src="./images/bell-svg.svg" alt="" />
+        </div>
+        <div class="profile-picture">
+          <img src="./images/anonymous-logo.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="recommendation">
+        <div class="top-vids-container">
+        <div class="top-videos"></div>
+        </div>
+        <div class="artist-section hidden">
+        </div>
+        <div class="podcasts-container">
+          <h2>Podcasts</h2>
+          <div class="podcasts">
+          </div>
+        </div>
+        <div class="artists-container">
+          <h2>Artists</h2>
+          <div class="artists">
+          </div>
+        </div>
+        <div class="stations-container">
+          <h2>Stations</h2>
+          <div class="stations"></div>
+        </div>
+        <div class="moods-container">
+          <h2>Moods</h2>
+          <div class="moods"></div>
+        </div>
+        <div class="india-best-container">
+          <h2>India's Best</h2>
+          <div class="charts"></div>
+        </div>
+        <div class="only-for-you-container">
+          <h2>Only for you</h2>
+          <div class="charts"></div>
+        </div>
+      </div>
+      <aside class="songs-queue">
+        <div class="header">
+          <span class="title">Queue</span>
+          <button class="drop-down">
+            <span>Queue</span>
+            <img class="down-arrow-icon" src="./images/down-arrow.svg"></img>
+            <ul class="dropdown-list">
+              <li>Playlists</li>
+              <li>Favorite Songs</li>
+            </ul>
+          </button>
+        </div>
+        
+      </aside>
+    </main>
+    <div class="player hidden">
+      <div class="content">
+        <div class="info-and-icons">
+          <div class="thumbnail">
+            <img src="https://m.media-amazon.com/images/I/61pId5QmuDL._SX472_SY472_BL0_QL100_.jpg" alt="">
+          </div>
+          <div class="info">
+          <div class="title">Agar Tum Sath Ho</div>
+          <div class="artist">Arijit Singh, Alka Yagnik</div>
+          </div>
+          <div class="icon like">
+            <img src="./images/heart-svg.svg" alt="">
+          </div>
+          <div class="icon dislike">
+            <img src="./images/stop.svg" alt="">
+          </div>
+        </div>
+        <div class="controls-and-progress">
+        <div class="controls">
+          <div class="icons">
+            <div class="shuffle">
+              <img src="./images/shuffle.svg" alt="">
+            </div>
+            <div class="previous">
+              <img src="./images/previous.svg" alt="">
+            </div>
+            <div class="pause-play">
+              <img src="./images/pause.svg" alt="">
+            </div>
+            <div class="next">
+              <img src="./images/next.svg" alt="">
+            </div>
+            <div class="loop">
+              <img src="./images/loop.svg" alt="">
+            </div>
+          </div>
+        </div>
+          <div class="progress">
+            <div class="time-passed">1:20</div>
+            <div class="progress-bar">
+              <div class="progressed"></div>
+            </div>
+            <div class="duration">4:17</div>
+          </div>
+        </div>
+        <div class="sound-and-menu">
+          <div class="icon playlist">
+            <img src="./images/playlist.svg" alt="">
+          </div>
+          <div class="icon speaker">
+            <img src="./images/speaker.svg" alt="">
+          </div>
+          <div class="icon volume">
+            <img src="./images/volume.svg" alt="">
+          </div>
+          <div class="volume-bar">
+          <div class="level"></div>
+        </div>
+        <div class="icon full-screen">
+          <img src="./images/fullscreen.svg" alt="">
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="./script.js"></script>
+</html>

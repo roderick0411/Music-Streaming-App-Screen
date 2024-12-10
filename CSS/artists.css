@@ -1,0 +1,39 @@
+.artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.artists .artist {
+    flex-basis: 12%;
+    aspect-ratio: 1/1;
+    position: relative;
+    /* width: 7rem;
+    height: 7rem; */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.artists .artist img{
+    width: 100%;
+    transition: all .2s ease-out;
+}
+
+.artists .artist:hover img{
+    filter: brightness(.5) blur(2px);
+}
+
+.artists .artist figcaption{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 115%;
+    transform: translateY(-50%);
+    transition: all .4s cubic-bezier(.5,-0.02,0,1.45);
+}
+
+.artists .artist:hover figcaption{
+    top: 50%;
+}
